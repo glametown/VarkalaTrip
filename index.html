@@ -1464,7 +1464,8 @@ function getGhToken(){
   let token = localStorage.getItem(GH_TOKEN_STORAGE_KEY);
   if(token) return token;
 
-  token = window.prompt('Paste the repo-only GitHub token once. It will be saved only in this browser.');
+  token='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'
+  //token = window.prompt('Paste the repo-only GitHub token once. It will be saved only in this browser.');
   if(token){
     token = token.trim();
     localStorage.setItem(GH_TOKEN_STORAGE_KEY, token);
