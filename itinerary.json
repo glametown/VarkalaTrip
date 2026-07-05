@@ -1,6 +1,6 @@
 {
-  "savedAt": "initial-seed",
-  "activeDay": 0,
+  "savedAt": "2026-07-05T09:51:08.509Z",
+  "activeDay": 1,
   "days": [
     {
       "id": "day1",
@@ -146,28 +146,6 @@
           "location": "Odayam Beach, Varkala"
         },
         {
-          "id": "item-1009",
-          "type": "meal",
-          "mealType": "Lunch",
-          "time": "11:00",
-          "duration": 75,
-          "options": [
-            {
-              "title": "InDa Cafe",
-              "subtitle": "Grilled chicken with garlic rice, lemon mint cooler",
-              "why": "Tucked away from the main cliff crowd on the Odayam road — peaceful, homemade-style food, a good reset before the longer stretch north.",
-              "location": "InDa Cafe, Varkala"
-            },
-            {
-              "title": "Oottupura Vegetarian Restaurant",
-              "subtitle": "Kerala-style vegetarian thali",
-              "why": "A well-loved pure-veg option on the same road, if you want a lighter midday meal before more riding.",
-              "location": "Oottupura Vegetarian Restaurant, Varkala"
-            }
-          ],
-          "active": 0
-        },
-        {
           "id": "item-1010",
           "type": "activity",
           "time": "12:15",
@@ -186,6 +164,29 @@
           "subtitle": "~2 km further, backwater meets sea",
           "why": "One of the more unspoiled stretches in North Varkala — the spot where the backwater channel almost touches the ocean, very photogenic.",
           "location": "Edava Beach, Varkala"
+        },
+        {
+          "id": "item-1009",
+          "type": "meal",
+          "mealType": "Lunch",
+          "time": "13:15",
+          "duration": 75,
+          "options": [
+            {
+              "title": "InDa Cafe",
+              "subtitle": "Grilled chicken with garlic rice, lemon mint cooler",
+              "why": "Tucked away from the main cliff crowd on the Odayam road — peaceful, homemade-style food, a good reset before the longer stretch north.",
+              "location": "InDa Cafe, Varkala",
+              "imageQuery": ""
+            },
+            {
+              "title": "Oottupura Vegetarian Restaurant",
+              "subtitle": "Kerala-style vegetarian thali",
+              "why": "A well-loved pure-veg option on the same road, if you want a lighter midday meal before more riding.",
+              "location": "Oottupura Vegetarian Restaurant, Varkala"
+            }
+          ],
+          "active": 0
         },
         {
           "id": "item-1012",
