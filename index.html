@@ -1534,18 +1534,19 @@ const GH_REPO = 'VarkalaTrip';
 const GH_BRANCH = 'main';
 const GH_FILE_PATH = 'itinerary.json';
 const GH_TOKEN_STORAGE_KEY = 'varkalaTripGitHubToken';
+const GH_EMBEDDED_TOKEN = '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';
 const LOCAL_PLAN_STORAGE_KEY = 'varkalaTripLocalPlan';
 
 function getGhToken(){
-  let token = localStorage.getItem(GH_TOKEN_STORAGE_KEY);
-  if(token) return token;
-
-  token='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'
+  /*
+    Prefer the embedded token so an old/bad token cached in localStorage cannot
+    keep causing GitHub 401 responses after this page is updated. Keep writing it
+    to localStorage for browsers that already depend on the saved value.
+  */
+  let token = GH_EMBEDDED_TOKEN.trim();
   //token = window.prompt('Paste the repo-only GitHub token once. It will be saved only in this browser.');
-  if(token){
-    token = token.trim();
-    localStorage.setItem(GH_TOKEN_STORAGE_KEY, token);
-  }
+  if(!token) token = (localStorage.getItem(GH_TOKEN_STORAGE_KEY) || '').trim();
+  if(token) localStorage.setItem(GH_TOKEN_STORAGE_KEY, token);
   return token;
 }
 
@@ -1613,6 +1614,7 @@ async function saveToGitHub(){
       sha = info.sha;
     } else if(getRes.status !== 404){
       const errBody = await getRes.text();
+      if(getRes.status === 401 || getRes.status === 403) forgetGhToken();
       throw new Error('GitHub read failed: ' + getRes.status + ' ' + errBody);
     }
 
