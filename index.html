@@ -1452,22 +1452,28 @@ document.getElementById('import-file').addEventListener('change', function(e){
    itinerary.json in this repo is the single shared source of truth.
    Anyone opening this page loads whatever is currently in that file;
    hitting "Save (shared)" writes straight back to it via the GitHub API.
-   No login system, no per-person history — last save simply wins. */
+   The write token is not committed into this public file; after one-time
+   entry it is remembered only in this browser's localStorage. */
 const GH_OWNER = 'glametown';
 const GH_REPO = 'VarkalaTrip';
 const GH_BRANCH = 'main';
 const GH_FILE_PATH = 'itinerary.json';
-// The write token is deliberately NOT stored here — a public page can't
-// safely contain a write-access secret (GitHub's own scanner correctly
-// blocked an earlier version of this file for exactly that reason). It's
-// asked for once per browser tab instead, kept only in memory, and never
-// written to the file, localStorage, or anywhere else.
-let ghToken = null;
+const GH_TOKEN_STORAGE_KEY = 'varkalaTripGitHubToken';
+
 function getGhToken(){
-  if(!ghToken){
-    ghToken = window.prompt('Paste the GitHub token to save changes (kept only in this browser tab — never stored):');
+  let token = localStorage.getItem(GH_TOKEN_STORAGE_KEY);
+  if(token) return token;
+
+  token = window.prompt('Paste the repo-only GitHub token once. It will be saved only in this browser.');
+  if(token){
+    token = token.trim();
+    localStorage.setItem(GH_TOKEN_STORAGE_KEY, token);
   }
-  return ghToken;
+  return token;
+}
+
+function forgetGhToken(){
+  localStorage.removeItem(GH_TOKEN_STORAGE_KEY);
 }
 
 function b64EncodeUnicode(str){
@@ -1511,43 +1517,51 @@ async function loadPlanFromGitHub(silent){
 
 async function saveToGitHub(){
   const token = getGhToken();
-  if(!token){ showToast('Save cancelled — no token entered'); return; }
+  if(!token){ showToast('Save cancelled — no token available'); return; }
+
   showToast('Saving for everyone…');
   try{
     const apiUrl = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE_PATH}`;
-    const getRes = await fetch(apiUrl + `?ref=${GH_BRANCH}`, {
-      headers: { Authorization: 'Bearer ' + token, Accept: 'application/vnd.github+json' }
-    });
+    const headers = {
+      Authorization: 'Bearer ' + token,
+      Accept: 'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28'
+    };
+
+    const getRes = await fetch(apiUrl + `?ref=${GH_BRANCH}`, { headers });
     let sha;
-    if(getRes.ok){ const info = await getRes.json(); sha = info.sha; }
+    if(getRes.ok){
+      const info = await getRes.json();
+      sha = info.sha;
+    } else if(getRes.status !== 404){
+      const errBody = await getRes.text();
+      throw new Error('GitHub read failed: ' + getRes.status + ' ' + errBody);
+    }
 
     const payload = { savedAt: new Date().toISOString(), activeDay: state.activeDay, days: state.days };
-    const contentStr = JSON.stringify(payload, null, 2);
     const body = {
       message: 'Update itinerary — ' + new Date().toLocaleString(),
-      content: b64EncodeUnicode(contentStr),
+      content: b64EncodeUnicode(JSON.stringify(payload, null, 2)),
       branch: GH_BRANCH
     };
     if(sha) body.sha = sha;
 
     const putRes = await fetch(apiUrl, {
       method: 'PUT',
-      headers: {
-        Authorization: 'Bearer ' + token,
-        Accept: 'application/vnd.github+json',
-        'Content-Type': 'application/json'
-      },
+      headers: { ...headers, 'Content-Type': 'application/json' },
       body: JSON.stringify(body)
     });
+
     if(!putRes.ok){
       const errBody = await putRes.text();
-      if(putRes.status === 401 || putRes.status === 403) ghToken = null; // let them retry with a corrected token
+      if(putRes.status === 401 || putRes.status === 403) forgetGhToken();
       throw new Error('GitHub save failed: ' + putRes.status + ' ' + errBody);
     }
+
     showToast('Saved ✓ — anyone with the link now sees this');
   }catch(e){
     console.error(e);
-    showToast('Save failed — see browser console for details');
+    showToast('Save failed — token was cleared if GitHub rejected it');
   }
 }
 
