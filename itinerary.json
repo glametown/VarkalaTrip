@@ -1,0 +1,464 @@
+{
+  "savedAt": "initial-seed",
+  "activeDay": 0,
+  "days": [
+    {
+      "id": "day1",
+      "label": "Day 1",
+      "date": "Jul 11",
+      "title": "Arrival & Settling In",
+      "note": "Land, get the scooty sorted, check in, and keep the rest of the day loose.",
+      "items": [
+        {
+          "id": "item-1000",
+          "type": "transit",
+          "time": "12:30",
+          "duration": 30,
+          "title": "Arrive Sivagiri Station",
+          "subtitle": "Pick up scooty — LocoRides or Unnikannan",
+          "why": "Call ahead that morning so a scooter is actually held for you.",
+          "location": "Varkala Sivagiri Railway Station"
+        },
+        {
+          "id": "item-1001",
+          "type": "rest",
+          "time": "13:30",
+          "duration": 60,
+          "title": "Check in & freshen up",
+          "subtitle": "The Cliff Boutique Hotel, North Cliff",
+          "why": "",
+          "location": "The Cliff Boutique Hotel, Varkala"
+        },
+        {
+          "id": "item-1002",
+          "type": "meal",
+          "mealType": "Lunch",
+          "time": "14:30",
+          "duration": 75,
+          "options": [
+            {
+              "title": "Chimney Family Restaurant",
+              "subtitle": "Tawa chicken fry, chicken biryani",
+              "why": "A relaxed re-entry meal — generous portions, easy parking, away from the cliff crowds for your first hour in town.",
+              "location": "Chimney Family Restaurant, Varkala"
+            },
+            {
+              "title": "Sunset Multicuisine Restaurant",
+              "subtitle": "Chicken multicuisine platter",
+              "why": "Same easy-going first-meal energy, with a sea view if you'd rather have it right away.",
+              "location": "Sunset Multicuisine Restaurant, North Cliff, Varkala"
+            }
+          ],
+          "active": 0
+        },
+        {
+          "id": "item-1003",
+          "type": "free",
+          "time": "16:00",
+          "duration": 150,
+          "title": "Open afternoon",
+          "subtitle": "Cliff walk & Tibetan market",
+          "why": "No agenda on purpose — walk the North Cliff path, browse stalls, let the train journey settle. Duck into any café if it drizzles.",
+          "location": "North Cliff, Varkala"
+        },
+        {
+          "id": "item-1004",
+          "type": "meal",
+          "mealType": "Dinner",
+          "sunset": true,
+          "time": "19:00",
+          "duration": 120,
+          "options": [
+            {
+              "title": "Cafe del Mar",
+              "subtitle": "Kerala Kozhi Chicken Roast with parotta, Alla Arrabbiata pasta",
+              "why": "One of the most-loved sunset perches on the whole cliff — golden hour over the Arabian Sea with proper Italian cooking.",
+              "location": "Cafe del Mar, North Cliff, Varkala"
+            },
+            {
+              "title": "Cinnamon",
+              "subtitle": "Chicken tikka, cocktail",
+              "why": "A vibrant cliff-edge café-bar with the same ocean-view sunset appeal, livelier once the sun is down.",
+              "location": "Cinnamon, North Cliff, Varkala"
+            }
+          ],
+          "active": 0
+        }
+      ]
+    },
+    {
+      "id": "day2",
+      "label": "Day 2",
+      "date": "Jul 12",
+      "title": "North Side Beaches",
+      "note": "Black Beach → Manthra → Odayam → Edava Vettakkada → Edava → Kappil. Six beaches — an early start keeps it unhurried instead of rushed.",
+      "items": [
+        {
+          "id": "item-1005",
+          "type": "meal",
+          "mealType": "Breakfast",
+          "time": "07:30",
+          "duration": 60,
+          "options": [
+            {
+              "title": "Juicy Cafe",
+              "subtitle": "Appam with vegetable stew, pineapple juice",
+              "why": "Authentic Kerala-style breakfast at honest prices — good fuel before a long beach-hopping day.",
+              "location": "Juicy Cafe, North Middle Cliff, Varkala"
+            },
+            {
+              "title": "Bindu's Cafe",
+              "subtitle": "Banana pancake, filter coffee",
+              "why": "A cliff regular for coffee and sunrise-side views — nice change of pace if Juicy Cafe is busy.",
+              "location": "Bindu's Cafe, Varkala"
+            }
+          ],
+          "active": 0
+        },
+        {
+          "id": "item-1006",
+          "type": "activity",
+          "time": "08:30",
+          "duration": 20,
+          "title": "Black Beach",
+          "subtitle": "First stop, ~5–10 min ride",
+          "why": "Quiet and rockier, far fewer crowds than the main beach — a nice first pause for photos and a barefoot walk.",
+          "location": "Black Beach, Varkala"
+        },
+        {
+          "id": "item-1007",
+          "type": "activity",
+          "time": "09:00",
+          "duration": 15,
+          "title": "Manthra Beach",
+          "subtitle": "Hidden cove, ~10 min further",
+          "why": "A tiny, rarely-visited cove tucked between Black Beach and Odayam — a quick stop rather than a long linger, but worth it for how empty it usually is.",
+          "location": "Manthra Beach, Varkala"
+        },
+        {
+          "id": "item-1008",
+          "type": "activity",
+          "time": "09:30",
+          "duration": 90,
+          "title": "Odayam Beach",
+          "subtitle": "Twin rocks, ~3 km further north",
+          "why": "Your first real hang of the day — calmer, more secluded shoreline, good for just sitting on the rocks and watching fishing boats.",
+          "location": "Odayam Beach, Varkala"
+        },
+        {
+          "id": "item-1009",
+          "type": "meal",
+          "mealType": "Lunch",
+          "time": "11:00",
+          "duration": 75,
+          "options": [
+            {
+              "title": "InDa Cafe",
+              "subtitle": "Grilled chicken with garlic rice, lemon mint cooler",
+              "why": "Tucked away from the main cliff crowd on the Odayam road — peaceful, homemade-style food, a good reset before the longer stretch north.",
+              "location": "InDa Cafe, Varkala"
+            },
+            {
+              "title": "Oottupura Vegetarian Restaurant",
+              "subtitle": "Kerala-style vegetarian thali",
+              "why": "A well-loved pure-veg option on the same road, if you want a lighter midday meal before more riding.",
+              "location": "Oottupura Vegetarian Restaurant, Varkala"
+            }
+          ],
+          "active": 0
+        },
+        {
+          "id": "item-1010",
+          "type": "activity",
+          "time": "12:15",
+          "duration": 20,
+          "title": "Edava Vettakkada Beach",
+          "subtitle": "Quiet cove near the lake estuary",
+          "why": "Less developed than its neighbours — a brief stop mainly for the sight of the lake water meeting the sea, especially dramatic in monsoon season.",
+          "location": "Edava Vettakkada Beach, Varkala"
+        },
+        {
+          "id": "item-1011",
+          "type": "activity",
+          "time": "13:00",
+          "duration": 45,
+          "title": "Edava Beach",
+          "subtitle": "~2 km further, backwater meets sea",
+          "why": "One of the more unspoiled stretches in North Varkala — the spot where the backwater channel almost touches the ocean, very photogenic.",
+          "location": "Edava Beach, Varkala"
+        },
+        {
+          "id": "item-1012",
+          "type": "activity",
+          "time": "13:45",
+          "duration": 30,
+          "title": "Arrive Kappil Beach & Lake",
+          "subtitle": "The standout of the day",
+          "why": "A narrow road runs between the sea on one side and the backwater lake on the other, with a bridge across the lake for photos.",
+          "location": "Kappil Beach, Varkala"
+        },
+        {
+          "id": "item-1013",
+          "type": "activity",
+          "time": "14:15",
+          "duration": 165,
+          "title": "Kappil Lake kayaking",
+          "subtitle": "Calm estuary paddling",
+          "why": "Beginner-friendly, coconut groves either side, good odds of spotting kingfishers and egrets. July is monsoon season — water can run rougher or murkier, so decide with the operator on the day rather than pre-booking. If it's paused, the bridge walk alone is worth it.",
+          "location": "Kappil Lake, Varkala"
+        },
+        {
+          "id": "item-1014",
+          "type": "transit",
+          "time": "17:15",
+          "duration": 30,
+          "title": "Ride back to North Cliff",
+          "subtitle": "~9 km, 25–30 min",
+          "why": "",
+          "location": "North Cliff, Varkala"
+        },
+        {
+          "id": "item-1015",
+          "type": "meal",
+          "mealType": "Dinner",
+          "time": "19:30",
+          "duration": 120,
+          "options": [
+            {
+              "title": "Little Tibet",
+              "subtitle": "Spinach-corn momos, chicken thukpa, banana shake",
+              "why": "Beautiful sea views, calm cliff-edge breeze, and reliably good Tibetan food to end a long beach day.",
+              "location": "Little Tibet, North Cliff, Varkala"
+            },
+            {
+              "title": "Darjeeling Cafe",
+              "subtitle": "Chicken sizzler",
+              "why": "A global-menu cliff café with the same easy sea-view wind-down, if Little Tibet is full.",
+              "location": "Darjeeling Cafe, North Cliff, Varkala"
+            }
+          ],
+          "active": 0
+        }
+      ]
+    },
+    {
+      "id": "day3",
+      "label": "Day 3",
+      "date": "Jul 13",
+      "title": "Jatayu Earth's Center + South Beaches",
+      "note": "Inland in the morning, back to the coast for sunset — the day is sequenced so you're not backtracking.",
+      "items": [
+        {
+          "id": "item-1016",
+          "type": "meal",
+          "mealType": "Breakfast",
+          "time": "07:30",
+          "duration": 60,
+          "options": [
+            {
+              "title": "ABBA Bakery Café",
+              "subtitle": "Brick-oven bread & eggs, cappuccino",
+              "why": "Quick, simple fuel since there's a 45–60 minute ride ahead.",
+              "location": "ABBA Bakery, Varkala"
+            },
+            {
+              "title": "Coffee Temple",
+              "subtitle": "Croissant, cappuccino",
+              "why": "A charming bakery alternative right on the cliff if ABBA is busy.",
+              "location": "Coffee Temple, Varkala"
+            }
+          ],
+          "active": 0
+        },
+        {
+          "id": "item-1017",
+          "type": "transit",
+          "time": "08:30",
+          "duration": 60,
+          "title": "Ride to Jatayu Earth's Center",
+          "subtitle": "Chadayamangalam, ~27–28 km",
+          "why": "Fill the tank before leaving Varkala town �� fewer petrol stops on this stretch.",
+          "location": "Jatayu Earth's Center, Chadayamangalam"
+        },
+        {
+          "id": "item-1018",
+          "type": "activity",
+          "time": "10:00",
+          "duration": 210,
+          "title": "Jatayu Earth's Center",
+          "subtitle": "Cable car, museum, 6D theatre",
+          "why": "Entry ~₹400/person, cash only — no cards or UPI at the counter. Take the cable car up rather than the 826-step climb in July humidity.",
+          "location": "Jatayu Earth's Center, Chadayamangalam"
+        },
+        {
+          "id": "item-1019",
+          "type": "meal",
+          "mealType": "Lunch",
+          "time": "13:45",
+          "duration": 75,
+          "options": [
+            {
+              "title": "True Thomas",
+              "subtitle": "Kerala-style chicken curry with parotta",
+              "why": "A well-loved local favourite blending North and South Indian food — a hearty stop on the ride back into town.",
+              "location": "True Thomas, Varkala"
+            },
+            {
+              "title": "Ruchi Restaurant",
+              "subtitle": "Chicken curry rice",
+              "why": "Another solid Kerala-cuisine stop closer to the helipad road if timing works out better.",
+              "location": "Ruchi Restaurant, Varkala"
+            }
+          ],
+          "active": 0
+        },
+        {
+          "id": "item-1020",
+          "type": "transit",
+          "time": "15:00",
+          "duration": 45,
+          "title": "Ride back to Varkala Cliff",
+          "subtitle": "~40–45 min",
+          "why": "",
+          "location": "Varkala Cliff"
+        },
+        {
+          "id": "item-1021",
+          "type": "activity",
+          "time": "16:00",
+          "duration": 150,
+          "title": "South Cliff & Papanasam Beach walk",
+          "subtitle": "Quieter, less commercial stretch",
+          "why": "An unhurried pre-sunset stroll before dinner.",
+          "location": "South Cliff Beach, Varkala"
+        },
+        {
+          "id": "item-1022",
+          "type": "meal",
+          "mealType": "Dinner",
+          "sunset": true,
+          "time": "18:45",
+          "duration": 105,
+          "options": [
+            {
+              "title": "Cafe Trip is Life",
+              "subtitle": "Wood-fired chicken pizza, pineapple-ginger cooler",
+              "why": "One of the best sea-facing perches on the south cliff — arrive an hour before sunset for a front-row table.",
+              "location": "Cafe Trip is Life, South Cliff, Varkala"
+            },
+            {
+              "title": "Soul Cafe",
+              "subtitle": "Chicken sandwich, pineapple ginger juice",
+              "why": "Unobstructed sea views and a properly chill vibe, right nearby on the same cliff.",
+              "location": "Soul Cafe, South Cliff, Varkala"
+            }
+          ],
+          "active": 0
+        }
+      ]
+    },
+    {
+      "id": "day4",
+      "label": "Day 4",
+      "date": "Jul 14",
+      "title": "Easy Morning & Departure",
+      "note": "Everything today stays close to the hotel — wrapped by 2:15 PM for the 3:40 PM train.",
+      "items": [
+        {
+          "id": "item-1023",
+          "type": "meal",
+          "mealType": "Breakfast",
+          "time": "08:30",
+          "duration": 60,
+          "options": [
+            {
+              "title": "Sun Francisco Cafe",
+              "subtitle": "French toast / pancake stack, filter coffee",
+              "why": "Consistently rated one of the best cafés in Varkala — a calm, unrushed final breakfast with excellent sea views.",
+              "location": "Sun Francisco Cafe, Varkala"
+            },
+            {
+              "title": "Lumuma",
+              "subtitle": "Acai bowl, coffee",
+              "why": "The only vegan café on the North Cliff, if you want something lighter on the last day.",
+              "location": "Lumuma Cafe, North Cliff, Varkala"
+            }
+          ],
+          "active": 0
+        },
+        {
+          "id": "item-1024",
+          "type": "activity",
+          "time": "09:30",
+          "duration": 120,
+          "title": "Varkala / Papanasam beach walk",
+          "subtitle": "Right below the cliff steps",
+          "why": "Ticks off the last beach without needing the scooty at all — good last window for souvenir shopping too.",
+          "location": "Varkala Beach, Papanasam, Varkala"
+        },
+        {
+          "id": "item-1025",
+          "type": "meal",
+          "mealType": "Lunch",
+          "time": "11:30",
+          "duration": 90,
+          "options": [
+            {
+              "title": "Trattorias",
+              "subtitle": "Chicken pizza or chicken alfredo pasta",
+              "why": "A fitting last cliff-view meal, close to the helipad road for an easy ride back.",
+              "location": "Trattorias, North End Cliff, Varkala"
+            },
+            {
+              "title": "Cafe Italiano",
+              "subtitle": "Chicken pizza",
+              "why": "Laid-back Italian spot nearby with the same easy vibe if Trattorias is packed.",
+              "location": "Cafe Italiano, Varkala"
+            }
+          ],
+          "active": 0
+        },
+        {
+          "id": "item-1026",
+          "type": "rest",
+          "time": "13:00",
+          "duration": 45,
+          "title": "Pack & check out",
+          "subtitle": "Settle the bill",
+          "why": "",
+          "location": "The Cliff Boutique Hotel, Varkala"
+        },
+        {
+          "id": "item-1027",
+          "type": "transit",
+          "time": "13:45",
+          "duration": 30,
+          "title": "Return the scooty",
+          "subtitle": "LocoRides / Unnikannan",
+          "why": "",
+          "location": "Varkala"
+        },
+        {
+          "id": "item-1028",
+          "type": "transit",
+          "time": "14:15",
+          "duration": 25,
+          "title": "Ride to Sivagiri Station",
+          "subtitle": "~10–15 min",
+          "why": "",
+          "location": "Varkala Sivagiri Railway Station"
+        },
+        {
+          "id": "item-1029",
+          "type": "transit",
+          "time": "15:40",
+          "duration": 0,
+          "title": "Departure train",
+          "subtitle": "From Varkala Sivagiri",
+          "why": "",
+          "location": "Varkala Sivagiri Railway Station"
+        }
+      ]
+    }
+  ]
+}
