@@ -37,16 +37,16 @@
           "duration": 75,
           "options": [
             {
-              "title": "Chimney Family Restaurant",
-              "subtitle": "Tawa chicken fry, chicken biryani",
-              "why": "A relaxed re-entry meal — generous portions, easy parking, away from the cliff crowds for your first hour in town.",
-              "location": "Chimney Family Restaurant, Varkala"
+              "title": "Arabian Grill",
+              "subtitle": "Kerala Al Faham, chicken 65, chilli chicken",
+              "why": "A relaxed re-entry meal inland near Puthenchantha — generous portions, easy parking, away from the cliff crowds for your first hour in town. Replaces Chimney Family Restaurant, which is temporarily closed.",
+              "location": "Arabian Grill, Puthenchantha, Varkala"
             },
             {
-              "title": "Sunset Multicuisine Restaurant",
-              "subtitle": "Chicken multicuisine platter",
-              "why": "Same easy-going first-meal energy, with a sea view if you'd rather have it right away.",
-              "location": "Sunset Multicuisine Restaurant, North Cliff, Varkala"
+              "title": "Kalyani's Kitchen",
+              "subtitle": "Chicken thali, veg thali",
+              "why": "A budget-friendly, always-open local favourite on the way in from the station if Arabian Grill is packed. Replaces Sunset Multicuisine Restaurant, which is also temporarily closed.",
+              "location": "Kalyani's Kitchen, North Cliff, Varkala"
             }
           ],
           "active": 0
@@ -186,10 +186,11 @@
               "imageQuery": ""
             },
             {
-              "title": "Oottupura Vegetarian Restaurant",
-              "subtitle": "Kerala-style vegetarian thali",
-              "why": "A well-loved pure-veg option on the same road, if you want a lighter midday meal before more riding.",
-              "location": "Oottupura Vegetarian Restaurant, Varkala"
+              "title": "Tickety Boo",
+              "subtitle": "Egg dosa, filter coffee, thali",
+              "why": "Their second outlet is right near InDa Cafe on this same road — budget-friendly and run by a wonderful deaf/hard-of-hearing staff. Replaces Oottupura Vegetarian Restaurant, which is permanently closed.",
+              "location": "Tickety Boo, near InDa Cafe, Odayam Road, Varkala",
+              "imageQuery": ""
             }
           ],
           "active": 0
@@ -273,16 +274,16 @@
           "duration": 60,
           "options": [
             {
-              "title": "ABBA Bakery Café",
-              "subtitle": "Brick-oven bread & eggs, cappuccino",
-              "why": "Quick, simple fuel since there's a 45–60 minute ride ahead.",
-              "location": "ABBA Bakery, Varkala"
-            },
-            {
               "title": "Coffee Temple",
               "subtitle": "Croissant, cappuccino",
-              "why": "A charming bakery alternative right on the cliff if ABBA is busy.",
+              "why": "A charming bakery-cafe right on the cliff — good, reliable fuel before the 45–60 minute ride ahead. ABBA Bakery Café is temporarily closed, so this now leads.",
               "location": "Coffee Temple, Varkala"
+            },
+            {
+              "title": "Aum Cafe",
+              "subtitle": "Vietnamese coffee, beetroot dosa",
+              "why": "A small, earthy North Cliff spot near Black Beach Road if Coffee Temple is busy — the Vietnamese coffee is a nice change of pace.",
+              "location": "Aum Cafe, North Cliff, Varkala"
             }
           ],
           "active": 0
@@ -315,16 +316,16 @@
           "duration": 75,
           "options": [
             {
-              "title": "True Thomas",
-              "subtitle": "Kerala-style chicken curry with parotta",
-              "why": "A well-loved local favourite blending North and South Indian food — a hearty stop on the ride back into town.",
-              "location": "True Thomas, Varkala"
-            },
-            {
               "title": "Ruchi Restaurant",
               "subtitle": "Chicken curry rice",
-              "why": "Another solid Kerala-cuisine stop closer to the helipad road if timing works out better.",
+              "why": "A solid Kerala-cuisine stop on the Helipad Road, on the ride back into town. True Thomas is permanently closed, so this now leads.",
               "location": "Ruchi Restaurant, Varkala"
+            },
+            {
+              "title": "Sea View Restaurant",
+              "subtitle": "Multicuisine, all-day menu",
+              "why": "A few doors down from Ruchi on the same Helipad Road, open straight through breakfast to dinner if you'd rather have options.",
+              "location": "Sea View Restaurant, Varkala Helipad Road, Varkala"
             }
           ],
           "active": 0
@@ -362,12 +363,6 @@
               "subtitle": "Wood-fired chicken pizza, pineapple-ginger cooler",
               "why": "One of the best sea-facing perches on the south cliff — arrive an hour before sunset for a front-row table.",
               "location": "Cafe Trip is Life, South Cliff, Varkala"
-            },
-            {
-              "title": "Soul Cafe",
-              "subtitle": "Chicken sandwich, pineapple ginger juice",
-              "why": "Unobstructed sea views and a properly chill vibe, right nearby on the same cliff.",
-              "location": "Soul Cafe, South Cliff, Varkala"
             },
             {
               "title": "Tibetan Kitchen",
