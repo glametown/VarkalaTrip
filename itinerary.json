@@ -1,5 +1,5 @@
 {
-  "savedAt": "2026-07-05T09:51:08.509Z",
+  "savedAt": "2026-07-09T00:00:00.000Z",
   "activeDay": 1,
   "days": [
     {
@@ -111,6 +111,12 @@
               "subtitle": "Banana pancake, filter coffee",
               "why": "A cliff regular for coffee and sunrise-side views — nice change of pace if Juicy Cafe is busy.",
               "location": "Bindu's Cafe, Varkala"
+            },
+            {
+              "title": "Clafouti",
+              "subtitle": "Aloo paratha, full breakfast spread",
+              "why": "A long-standing North Cliff favourite for breakfast, right near Black Beach where the day starts.",
+              "location": "Clafouti Restaurant, North Cliff, Varkala"
             }
           ],
           "active": 0
@@ -239,6 +245,16 @@
             }
           ],
           "active": 0
+        },
+        {
+          "id": "item-1030",
+          "type": "activity",
+          "time": "21:30",
+          "duration": 90,
+          "title": "Optional: Sandy Bar nightlife",
+          "subtitle": "Black Beach — Varkala's best-known party spot",
+          "why": "If you're up for a late one after dinner, Sandy Bay Cafe at Black Beach (where you started the day) is the go-to for music and a livelier scene. Entirely optional — skip it if the beach day has worn you out.",
+          "location": "Sandy Bar, Black Beach, Varkala"
         }
       ]
     },
@@ -352,6 +368,18 @@
               "subtitle": "Chicken sandwich, pineapple ginger juice",
               "why": "Unobstructed sea views and a properly chill vibe, right nearby on the same cliff.",
               "location": "Soul Cafe, South Cliff, Varkala"
+            },
+            {
+              "title": "Tibetan Kitchen",
+              "subtitle": "Momos, thukpa, garlic fish",
+              "why": "Right on Papanasam Cliff where you'll already be for the sunset walk — reliably good Tibetan food with a first-floor sea view.",
+              "location": "Tibetan Kitchen, Papanasam Cliff, Varkala"
+            },
+            {
+              "title": "Cafe Sarwaa",
+              "subtitle": "Smoothie bowl, beef curry combo with porotta",
+              "why": "One of the most photographed sunset spots on the south cliff, with steps straight down to a quiet private beach.",
+              "location": "Cafe Sarwaa, South Cliff, Varkala"
             }
           ],
           "active": 0
@@ -363,7 +391,7 @@
       "label": "Day 4",
       "date": "Jul 14",
       "title": "Easy Morning & Departure",
-      "note": "Everything today stays close to the hotel — wrapped by 2:15 PM for the 3:40 PM train.",
+      "note": "Everything today stays close to the hotel — lunch now starts at 12 (not 11:30) so mealtimes aren't back-to-back with breakfast; wrapped by around 3:10 PM for the 3:40 PM train.",
       "items": [
         {
           "id": "item-1023",
@@ -401,7 +429,7 @@
           "id": "item-1025",
           "type": "meal",
           "mealType": "Lunch",
-          "time": "11:30",
+          "time": "12:00",
           "duration": 90,
           "options": [
             {
@@ -415,6 +443,12 @@
               "subtitle": "Chicken pizza",
               "why": "Laid-back Italian spot nearby with the same easy vibe if Trattorias is packed.",
               "location": "Cafe Italiano, Varkala"
+            },
+            {
+              "title": "Cafe Iyra",
+              "subtitle": "Wood-fired pizza, lunch bowls",
+              "why": "Another well-regarded North Cliff lunch option if you'd rather stay put than head toward Trattorias.",
+              "location": "Cafe Iyra, North Cliff, Varkala"
             }
           ],
           "active": 0
@@ -422,7 +456,7 @@
         {
           "id": "item-1026",
           "type": "rest",
-          "time": "13:00",
+          "time": "13:30",
           "duration": 45,
           "title": "Pack & check out",
           "subtitle": "Settle the bill",
@@ -432,7 +466,7 @@
         {
           "id": "item-1027",
           "type": "transit",
-          "time": "13:45",
+          "time": "14:15",
           "duration": 30,
           "title": "Return the scooty",
           "subtitle": "LocoRides / Unnikannan",
@@ -442,7 +476,7 @@
         {
           "id": "item-1028",
           "type": "transit",
-          "time": "14:15",
+          "time": "14:45",
           "duration": 25,
           "title": "Ride to Sivagiri Station",
           "subtitle": "~10–15 min",
